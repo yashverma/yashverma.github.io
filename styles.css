@@ -16,3 +16,20 @@
 .game-title-link span{font-family:system-ui;font-size:.65em;color:var(--accent);vertical-align:middle}
 .game-visit{display:inline-flex;align-items:center;gap:10px;margin-top:19px;color:var(--accent);font-size:12px;font-weight:700}
 @media(prefers-reduced-motion:reduce){.game-cover{transition:none}}
+
+/* Additional projects */
+.additional-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.additional-card{display:flex;flex-direction:column;min-width:0;padding:26px;background:var(--panel);border:1px solid var(--edge);border-radius:9px;transition:border-color .2s,transform .2s}
+.additional-card:hover{border-color:#456c68;transform:translateY(-3px)}
+.additional-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:24px}
+.additional-icon{display:flex;align-items:center;justify-content:center;width:51px;height:51px;border:1px solid #456c68;border-radius:8px;background:#183333;color:var(--accent);font:700 16px/1 'Space Grotesk',sans-serif}
+.additional-type,.additional-company{color:var(--dim);font-size:10px;font-weight:700;letter-spacing:.09em}
+.additional-type{text-align:right}.additional-company{color:var(--accent);margin-bottom:9px}
+.additional-card h3{font-size:23px;margin-bottom:15px;line-height:1.2}
+.additional-card h3 a:hover{color:var(--accent)}
+.additional-card h3 a span{font-size:.65em;color:var(--accent)}
+.additional-card>p:not(.additional-company){font-size:13px;line-height:1.8;flex:1;margin-bottom:20px}
+.additional-card .game-visit{margin-top:20px}
+@media(max-width:950px){.additional-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.additional-grid{grid-template-columns:1fr}.site-nav a[href="#projects"]{display:none}}
+@media(prefers-reduced-motion:reduce){.additional-card{transition:none}}
