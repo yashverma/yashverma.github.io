@@ -1,43 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Yash Verma | Unreal Engine Programmer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 850px;
-            margin: 80px auto;
-            padding: 0 24px;
-            line-height: 1.7;
-            color: #222;
-        }
-        h1 { margin-bottom: 0; }
-        h2 { margin-top: 40px; }
-        a { color: #1769aa; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Yash Verma — Senior Unreal Engine C++ Programmer. Multiplayer networking, gameplay systems, vehicles, and engine development. Credits include Squad 44, Path of Titans, and Aquanox Deep Descent.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yash Verma | Senior Unreal Engine Programmer">
+  <meta property="og:description" content="Unreal Engine C++ · Multiplayer systems · Gameplay engineering · Shipped games">
+  <title>Yash Verma — Unreal Engine Programmer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Yash Verma</h1>
-    <p>Senior Unreal Engine C++ Programmer</p>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-    <h2>About Me</h2>
-    <p>
-        11+ years of experience developing and shipping
-        games, specializing in multiplayer networking,
-        gameplay systems, and engine development.
-    </p>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top" aria-label="Yash Verma, back to top"><span class="wordmark-mark">YV<span class="wordmark-dot">.</span></span><span class="wordmark-name">YASH VERMA</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#games">Games</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a class="nav-contact" href="mailto:Yashbit@gmail.com">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-    <h2>Shipped Games</h2>
-    <ul>
-        <li>Squad 44</li>
-        <li>Path of Titans</li>
-        <li>Aquanox Deep Descent</li>
-    </ul>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> SENIOR UNREAL ENGINE C++ PROGRAMMER <span class="eyebrow-divider">/</span> INDIA · REMOTE</div>
+        <h1 id="hero-title">I build the systems <em>behind</em> great games<span class="accent">.</span></h1>
+        <p class="hero-description">11+ years building and shipping multiplayer games. I specialize in server-authoritative networking, gameplay architecture, vehicle physics, engine development, and performance optimization.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Career highlights">
+        <span class="panel-label">AT A GLANCE</span>
+        <div class="stat"><strong>11<span>+</span></strong><span>Years building games</span></div>
+        <div class="panel-rule"></div>
+        <div class="stat"><strong>03</strong><span>Shipped commercial titles highlighted</span></div>
+        <div class="panel-rule"></div>
+        <div class="panel-foot"><span class="mini-square"></span> C++ / UNREAL ENGINE 4 & 5</div>
+      </aside>
+    </section>
 
-    <h2>Contact</h2>
-    <p><a href="mailto:Yashbit@gmail.com">Email me</a></p>
+    <section class="section wrap" id="games" aria-labelledby="games-title">
+      <div class="section-head"><div><p class="kicker">01 / SELECTED WORK</p><h2 id="games-title">Shipped games<span class="accent">.</span></h2></div><p class="section-intro">Commercial projects I've contributed to, spanning military simulation, survival, and underwater combat.</p></div>
+      <div class="games-grid">
+        <article class="game-card squad">
+          <div class="game-art" aria-hidden="true"><div class="art-topline">TACTICAL · MULTIPLAYER</div><div class="art-graphic squad-graphic">44<span> / </span></div><div class="art-caption">SQUAD 44</div></div>
+          <div class="game-body"><div class="game-meta"><span>PERISCOPE GAMES</span><span>TECHNICAL LEAD</span></div><h3>Squad 44</h3><p class="previous-title">Formerly Post Scriptum</p><p>Led the programming team and built game modes, armored vehicle combat, gameplay systems, and Steam-connected modding features.</p><div class="tags"><span>Multiplayer</span><span>Vehicles</span><span>Gameplay</span></div></div>
+        </article>
+        <article class="game-card titans">
+          <div class="game-art" aria-hidden="true"><div class="art-topline">SURVIVAL · MULTIPLAYER</div><div class="art-graphic titans-graphic">P<span>/</span>T</div><div class="art-caption">PATH OF TITANS</div></div>
+          <div class="game-body"><div class="game-meta"><span>ALDERON GAMES</span><span>SENIOR PROGRAMMER</span></div><h3>Path of Titans</h3><p class="previous-title">Multiplayer dinosaur survival</p><p>Worked on server-authoritative validation, GAS-powered gameplay, UI, debugging, and targeted performance improvements.</p><div class="tags"><span>Networking</span><span>GAS</span><span>Optimization</span></div></div>
+        </article>
+        <article class="game-card aquanox">
+          <div class="game-art" aria-hidden="true"><div class="art-topline">ACTION · UNDERWATER</div><div class="art-graphic aqua-graphic">A<span>—</span>D</div><div class="art-caption">AQUANOX DEEP DESCENT</div></div>
+          <div class="game-body"><div class="game-meta"><span>DIGITAL ARROW</span><span>PROGRAMMER</span></div><h3>Aquanox Deep Descent</h3><p class="previous-title">Published by THQ Nordic</p><p>Developed player movement and physics interactions, contributed to NPC AI, damage systems, and animation integration.</p><div class="tags"><span>Movement</span><span>Physics</span><span>AI</span></div></div>
+        </article>
+      </div>
+      <p class="work-note">Visuals above are original typographic placeholders—not official game artwork. Replace them with approved screenshots whenever you like.</p>
+    </section>
+
+    <section class="section expertise-section" id="expertise" aria-labelledby="expertise-title"><div class="wrap">
+      <div class="section-head"><div><p class="kicker">02 / WHAT I DO</p><h2 id="expertise-title">Technical expertise<span class="accent">.</span></h2></div><p class="section-intro">From low-level engine work to networked gameplay systems, with a focus on solutions that hold up in production.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise-card"><span class="card-number">01</span><h3>Multiplayer & networking</h3><p>Server-authoritative systems, replication, client prediction, rollback hit validation, projectile ballistics, and backend integrations.</p></article>
+        <article class="expertise-card"><span class="card-number">02</span><h3>Gameplay architecture</h3><p>Combat, character attributes, status effects, progression, animation integration, persistence, and gameplay UI.</p></article>
+        <article class="expertise-card"><span class="card-number">03</span><h3>Vehicles & physics</h3><p>Armored vehicle combat, component damage, tracked vehicle driving physics, Chaos Vehicles, and custom drivetrains.</p></article>
+        <article class="expertise-card"><span class="card-number">04</span><h3>Engine & performance</h3><p>Unreal Engine source modifications, tooling, profiling, code generation, engine upgrades, and runtime optimization.</p></article>
+      </div>
+      <div class="toolbelt"><span>TOOLKIT</span><p>C++ <b>·</b> Unreal Engine 4/5 <b>·</b> Blueprints <b>·</b> Unreal Insights <b>·</b> Superluminal <b>·</b> Perforce <b>·</b> Git <b>·</b> Visual Studio</p></div>
+    </div></section>
+
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-head"><div><p class="kicker">03 / BACKGROUND</p><h2 id="experience-title">Experience<span class="accent">.</span></h2></div><p class="section-intro">A career spent building gameplay, improving engines, and helping teams ship.</p></div>
+      <div class="timeline">
+        <article class="role"><div class="role-date">2023 — 2026</div><div class="role-detail"><h3>Senior Gameplay Programmer <span>· Alderon Games</span></h3><p>Built networked combat and replicated character systems for an unannounced project, alongside gameplay, UI, networking, and optimization work on <em>Path of Titans</em>.</p></div></article>
+        <article class="role"><div class="role-date">2018 — 2022</div><div class="role-detail"><h3>Technical Lead <span>· Periscope Games</span></h3><p>Led programming on <em>Squad 44</em>, delivering game modes, vehicle combat, modding integration, internal tooling, and gameplay systems. Also worked on custom tracked vehicle physics for an unannounced project.</p></div></article>
+        <article class="role"><div class="role-date">2017 — 2018</div><div class="role-detail"><h3>Programmer <span>· Digital Arrow</span></h3><p>Contributed movement, physics, NPC AI, damage, and animation systems to <em>Aquanox Deep Descent</em>.</p></div></article>
+        <article class="role"><div class="role-date">2014 — 2017</div><div class="role-detail"><h3>Team Leader <span>· Heroes of the West / Kernow Interactive</span></h3><p>Founded and led the <em>Heroes of the West</em> total conversion team. Secured official Tripwire Interactive support and reached 40,000 downloads in the first month on Steam.</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="kicker">04 / GET IN TOUCH</p><h2 id="contact-title">Have a project in mind<span class="accent">?</span></h2><p>Interested in Unreal Engine programming, multiplayer systems, or technical collaboration? Get in touch.</p></div><a class="btn btn-primary" href="mailto:Yashbit@gmail.com">Email me <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Yash Verma</span><span>Built with HTML & CSS · Hosted on GitHub Pages</span><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
