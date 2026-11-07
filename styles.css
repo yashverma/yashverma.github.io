@@ -5,3 +5,14 @@
 @media(max-width:760px){.wrap{padding-inline:22px}.header-inner{height:67px}.wordmark-name{display:none}.site-nav{gap:15px;font-size:12px}.site-nav a[href="#expertise"],.site-nav a[href="#experience"]{display:none}.site-nav .nav-contact{padding:7px 10px}.hero{grid-template-columns:1fr;padding-block:73px 75px;min-height:auto;gap:35px}.hero h1{font-size:clamp(2.9rem,9vw,4.7rem)}.hero-description{font-size:15px}.hero-panel{transform:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center;padding:22px}.hero-panel .panel-label,.hero-panel .panel-foot{grid-column:1/-1}.hero-panel .panel-rule{display:none}.stat{padding:6px 0}.stat strong{font-size:49px}.section{padding-block:68px}.section-head{align-items:start;flex-direction:column;gap:14px}.games-grid{grid-template-columns:1fr}.game-art{height:190px}.game-body>p:not(.previous-title){min-height:auto}.game-meta{flex-direction:row}.expertise-grid{grid-template-columns:1fr}.expertise-card{min-height:auto}.toolbelt{flex-direction:column;gap:9px}.role{grid-template-columns:1fr;gap:9px;padding-block:25px}.role-detail h3{font-size:20px}.contact-inner{align-items:start;flex-direction:column}.footer-inner{flex-wrap:wrap;gap:12px}}
 @media(max-width:370px){.site-nav{gap:8px}.eyebrow{font-size:9px}.hero h1{font-size:2.75rem}.btn{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* Official artwork and outbound game links */
+.game-art-link{display:block;padding:0;background:#132438;position:relative;isolation:isolate}
+.game-art-link::after{display:none}
+.game-cover{display:block;width:100%;height:100%;object-fit:cover;object-position:center 31%;transition:transform .35s ease;filter:saturate(.92)}
+.game-card:hover .game-cover,.game-art-link:focus-visible .game-cover{transform:scale(1.055)}
+.game-art-overlay{position:absolute;inset:auto 0 0;display:flex;align-items:center;justify-content:flex-end;padding:32px 17px 13px;background:linear-gradient(transparent,rgba(3,10,19,.88));font-size:10px;letter-spacing:.14em;font-weight:800;color:#f1f7fa}
+.game-title-link:hover,.game-visit:hover{color:var(--accent)}
+.game-title-link span{font-family:system-ui;font-size:.65em;color:var(--accent);vertical-align:middle}
+.game-visit{display:inline-flex;align-items:center;gap:10px;margin-top:19px;color:var(--accent);font-size:12px;font-weight:700}
+@media(prefers-reduced-motion:reduce){.game-cover{transition:none}}
