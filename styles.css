@@ -9,7 +9,7 @@
 /* Official artwork and outbound game links */
 .game-art-link{display:block;padding:0;background:#132438;position:relative;isolation:isolate}
 .game-art-link::after{display:none}
-.game-cover{display:block;width:100%;height:100%;object-fit:cover;object-position:center 31%;transition:transform .35s ease;filter:saturate(.92)}
+.game-cover{display:block;width:100%;height:100%;object-fit:cover;object-position:center 3%;transition:transform .35s ease;filter:saturate(.92)}
 .game-card:hover .game-cover,.game-art-link:focus-visible .game-cover{transform:scale(1.055)}
 .game-art-overlay{position:absolute;inset:auto 0 0;display:flex;align-items:center;justify-content:flex-end;padding:32px 17px 13px;background:linear-gradient(transparent,rgba(3,10,19,.88));font-size:10px;letter-spacing:.14em;font-weight:800;color:#f1f7fa}
 .game-title-link:hover,.game-visit:hover{color:var(--accent)}
@@ -33,3 +33,94 @@
 @media(max-width:950px){.additional-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.additional-grid{grid-template-columns:1fr}.site-nav a[href="#projects"]{display:none}}
 @media(prefers-reduced-motion:reduce){.additional-card{transition:none}}
+
+
+/* Quiet, editorial portfolio treatment. Overrides the original theme. */
+:root {
+  --bg: #11161c;
+  --bg2: #151b22;
+  --panel: #19212a;
+  --edge: #303943;
+  --text: #e8edf0;
+  --muted: #b3bec8;
+  --dim: #96a4b2;
+  --accent: #9db5c5;
+  --width: 1080px;
+}
+body { background: var(--bg); line-height: 1.65; }
+h1,h2,h3 { font-family: 'DM Sans',system-ui,sans-serif; letter-spacing: -.025em; }
+h2 { font-size: clamp(1.65rem, 2.8vw, 2.45rem); font-weight: 600; }
+p { color: var(--muted); }
+.ambient { display: none; }
+.site-header { background: rgba(17,22,28,.97); border-bottom: 1px solid var(--edge); backdrop-filter: none; }
+.header-inner { height: 66px; }
+.wordmark-mark { font-family: 'DM Sans',sans-serif; font-size: 18px; letter-spacing: -.045em; }
+.wordmark-name { font-size: 10px; font-weight: 600; letter-spacing: .12em; color: var(--muted); }
+.wordmark-dot { color: var(--dim); }
+.site-nav { gap: 24px; font-weight: 500; color: var(--muted); }
+.site-nav .nav-contact { padding: 7px 12px; border-color: var(--edge); }
+.site-nav a:hover, .site-footer a:hover { color: var(--text); }
+.hero { min-height: auto; grid-template-columns: minmax(0,1.8fr) minmax(230px,.7fr); gap: 55px; padding-block: 87px 92px; }
+.hero h1 { font-size: clamp(2.5rem, 4.6vw, 4.1rem); line-height: 1.13; margin-bottom: 23px; max-width: 670px; font-weight: 600; }
+.hero h1 em { color: var(--text); }
+.hero-description { font-size: 16px; line-height: 1.75; margin-bottom: 27px; }
+.eyebrow, .kicker, .panel-label, .game-meta, .card-number, .role-date, .toolbelt>span { letter-spacing: .08em; font-weight: 600; }
+.eyebrow { color: var(--dim); margin-bottom: 20px; }
+.status-dot { background: #7f9b91; box-shadow: none; }
+.eyebrow-divider { color: var(--dim); }
+.btn { border-radius: 4px; min-height: 43px; font-weight: 600; gap: 17px; transition: background-color .15s,border-color .15s; }
+.btn:hover { transform: none; }
+.btn-primary { background: #d5dee4; color: #171d23; }
+.btn-primary:hover { background: #f2f5f7; }
+.btn-secondary { border-color: #495560; }
+.btn-secondary:hover { border-color: #a5b4bf; }
+.hero-panel { transform: none; background: transparent; border: 1px solid var(--edge); border-radius: 5px; box-shadow: none; padding: 27px; }
+.stat { padding-block: 17px; }
+.stat strong { font: 600 49px/1.1 'DM Sans',sans-serif; letter-spacing: -.055em; }
+.stat strong span { color: var(--dim); }
+.panel-foot { color: var(--dim); letter-spacing: .06em; }
+.mini-square { transform: none; border-color: var(--dim); }
+.section { padding-block: 68px; }
+.section-head { margin-bottom: 29px; }
+.kicker { color: var(--dim); margin-bottom: 10px; }
+.accent { color: var(--dim); }
+.games-grid, .additional-grid { gap: 16px; }
+.game-card, .additional-card { border-radius: 5px; background: var(--panel); transition: none; }
+.game-card:hover, .additional-card:hover { transform: none; border-color: #607080; }
+.game-art { height: 195px; }
+.game-cover { filter: saturate(.77); transition: none; }
+.game-card:hover .game-cover, .game-art-link:focus-visible .game-cover { transform: none; filter: saturate(.94); }
+.game-art-overlay { font-size: 10px; letter-spacing: .05em; font-weight: 600; }
+.game-body { padding: 22px; }
+.game-body h3 { font-size: 20px; font-weight: 600; }
+.game-meta, .additional-company { color: var(--dim); }
+.game-meta { font-size: 9px; letter-spacing: .06em; }
+.game-title-link span, .additional-card h3 a span { color: var(--dim); }
+.game-visit { color: #c1d0db; font-weight: 600; }
+.game-title-link:hover, .game-visit:hover, .additional-card h3 a:hover { color: #fff; }
+.tags span { color: #adb9c4; border-color: #394550; font-weight: 500; }
+.additional-card { padding: 24px; }
+.additional-top { margin-bottom: 22px; }
+.additional-icon { background: transparent; color: var(--muted); border-color: #46525c; border-radius: 4px; width: 44px; height: 44px; font: 600 15px/1 'DM Sans',sans-serif; }
+.additional-type { color: var(--dim); }
+.additional-card h3 { font-size: 20px; font-weight: 600; }
+.expertise-section { background: #151b22; border-block: 1px solid var(--edge); }
+.expertise-card { background: transparent; border-radius: 5px; padding: 24px; min-height: 185px; }
+.expertise-card h3 { font-size: 20px; font-weight: 600; }
+.card-number, .role-date, .toolbelt>span { color: var(--dim); }
+.toolbelt b { color: var(--dim); }
+.role { padding-block: 25px; }
+.role-detail h3 { font-size: 20px; font-weight: 600; }
+.contact-section { padding-block: 65px; background: var(--bg2); border-top: 1px solid var(--edge); }
+.contact-inner h2 { font-size: clamp(1.8rem,3vw,2.6rem); }
+:focus-visible { outline-color: #c7d6df; }
+::selection { background: #c5d3dd; color: #10161a; }
+@media(max-width:760px) {
+  .header-inner { height: 62px; }
+  .hero { padding-block: 65px; gap: 28px; grid-template-columns: 1fr; }
+  .hero h1 { font-size: clamp(2.25rem,8vw,3.4rem); }
+  .hero-panel { padding: 20px; }
+  .stat strong { font-size: 40px; }
+  .section { padding-block: 55px; }
+  .game-art { height: 185px; }
+}
